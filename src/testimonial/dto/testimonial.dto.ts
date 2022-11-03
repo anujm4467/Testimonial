@@ -10,12 +10,6 @@ export class TestimonialDto {
   @IsString()
   name: string;
 
-  // @ApiProperty({
-  //   description: 'upload photo',
-  //   example: 'image.png',
-  // })
-  // photo_url: string;
-
   @ApiProperty({
     description: 'what is post of testimonial',
     example: 'CEO',

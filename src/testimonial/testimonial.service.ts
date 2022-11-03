@@ -38,7 +38,6 @@ export class TestimonialService {
     return this.testimonial.findByIdAndUpdate(id, { image: filePath });
   }
 
-
   async findTestimonial(id: string): Promise<ITestimonial> {
     this.logger.verbose(`Finding Testimonial with id: ${id}`);
     const testimonial = await this.testimonial.findById({ _id: id });
